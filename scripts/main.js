@@ -5,9 +5,9 @@ let myImage = document.querySelector('img');
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
   if(mySrc === 'images/firefox-icon.png') {
-    myImage.setAttribute ('src','images/firefox2.png');
+    myImage.setAttribute ('src','images/sky.png');
   } else {
-    myImage.setAttribute ('src','images/firefox-icon.png');
+    myImage.setAttribute ('src','images/phone.png');
   }
 }
 
@@ -17,7 +17,7 @@ let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
 function setUserName() {
-  let myName = prompt('Please enter your name.');
+  let myName = prompt('名前を入力してください.');
   if(!myName) {
     setUserName();
   } else {
