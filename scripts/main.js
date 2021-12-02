@@ -17,12 +17,12 @@ let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
 function setUserName() {
-  let myName = prompt('名前を入力してください.');
+  let myName = prompt('名前を入力してください');
   if(!myName) {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'ようこそ、 ' + myName + 'さん';
+    myHeading.innerHTML = 'ようこそ、' + myName + 'さん';
   }
 }
 
@@ -30,7 +30,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'ようこそ、 ' + storedName + 'さん';
+  myHeading.innerHTML = 'ようこそ、' + storedName + 'さん';
 }
 
 myButton.onclick = function() {
