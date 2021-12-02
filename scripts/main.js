@@ -5,9 +5,9 @@ let myImage = document.querySelector('img');
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
   if(mySrc === 'images/sky.png') {
-    myImage.setAttribute ('src','images/firefox-icon.png');
+    myImage.setAttribute ('src','images/.png');
   } else {
-    myImage.setAttribute ('src','images/phone.png');
+    myImage.setAttribute ('src','images/firefox-icon.png');
   }
 }
 
